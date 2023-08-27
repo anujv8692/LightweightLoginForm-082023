@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right bottom, #7744ff,#7aeec2b0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-box{
+    width: 50%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px 28px;
+    margin-inline: 20px;
+}
+
+.form-box h1{
+    text-align: center;
+    color: #25064d;
+}
+
+.form-box form{
+    margin-block: 30px;
+}
+
+input{
+    width: 100%;
+    padding: 18px 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #a3a3a340;
+    font-size: 16px;
+    margin: 12px 0;
+
+}
+
+a{
+    text-decoration: none;
+    color: #566674;
+    font-size: 14px;
+
+}
+
+input[type="button"]{
+    margin-block: 24px;
+    background-color: #552fbd;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+input[type="button"]:hover{
+    background-color: #29175a;
+}   
+
+.links{
+    display: flex;
+    justify-content: center;
+}
+
+.links a img{
+    max-height: 30px;
+    margin-inline: 10px;
+}
+
+.signup{
+    text-align: center;
+    margin-block: 20px;
+    
+}
+.signup a{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.signup a:hover{
+    color: #25064d;
+    text-decoration: underline 1px;
+    text-underline-offset: 3.5px;
+
+}
+
+#nameTF{
+    display: none;
+}
+
+.alreadyAUserLine{
+    display: none;
+    text-align: center;
+    margin-block: 20px;
+}
+
+.alreadyAUserLine a{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.alreadyAUserLine a:hover{
+    color: #25064d;
+    text-decoration: underline 1px;
+    text-underline-offset: 3.5px;
+
+}
+
+
+/* CSS to achieve responsiveness */
+@media screen and (max-width:700px) {
+    .form-box{
+        width: 100%;
+    }
+}
